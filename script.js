@@ -1,7 +1,7 @@
 // Audio Player Functionality
 document.addEventListener('DOMContentLoaded', function() {
     const audioPlayers = document.querySelectorAll('.audio-player');
-    
+
     audioPlayers.forEach(player => {
         const playBtn = player.querySelector('.play-btn');
         const playIcon = player.querySelector('.play-icon');
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         playBtn.addEventListener('click', function(e) {
             e.preventDefault(); // Prevent any default behavior
             const audioId = this.getAttribute('data-audio');
-            
+
             // Pause all other audio players
             document.querySelectorAll('audio').forEach(otherAudio => {
                 if (otherAudio.getAttribute('data-id') !== audioId && !otherAudio.paused) {
@@ -129,14 +129,16 @@ document.addEventListener('DOMContentLoaded', function() {
     if (contactForm) {
         contactForm.addEventListener('submit', async function(e) {
             e.preventDefault();
-            
+
             const submitButton = contactForm.querySelector('.submit-button');
             const formData = new FormData(contactForm);
-            
+            formData.append("access_key", "1a7348d4-2a2e-4185-9543-707fec22cd6f");
+
             // Show loading state
+            const originalText = submitButton.textContent;
             submitButton.textContent = 'Sending...';
             submitButton.disabled = true;
-            
+
             try {
                 const response = await fetch('https://api.web3forms.com/submit', {
                     method: 'POST',
