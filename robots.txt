@@ -1,0 +1,7 @@
+# robots.txt for vaughandouglas-voice.netlify.app
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://vaughandouglas-voice.netlify.app/sitemap.xml
