@@ -124,16 +124,42 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Form submission handling - Netlify Forms handles this automatically
-    // The form will submit naturally to Netlify without JavaScript intervention
+    // Web3Forms submission handling
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            // Don't prevent default - let Netlify handle it
-            // Just show a brief loading indicator if desired
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
             const submitButton = contactForm.querySelector('.submit-button');
+            const formData = new FormData(contactForm);
+            
+            // Show loading state
             submitButton.textContent = 'Sending...';
             submitButton.disabled = true;
+            
+            try {
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    // Redirect to thank you page
+                    window.location.href = 'thank-you.html';
+                } else {
+                    // Show error message
+                    alert('Sorry, there was an error sending your message. Please try emailing me directly at vaughandouglas@gmail.com');
+                    submitButton.textContent = 'Send Message';
+                    submitButton.disabled = false;
+                }
+            } catch (error) {
+                console.error('Form submission error:', error);
+                alert('Sorry, there was an error sending your message. Please try emailing me directly at vaughandouglas@gmail.com');
+                submitButton.textContent = 'Send Message';
+                submitButton.disabled = false;
+            }
         });
     }
 
