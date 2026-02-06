@@ -758,6 +758,53 @@ section {
     .footer {
         font-size: 0.85rem;
     }
+
+.portfolio-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.portfolio-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.portfolio-title {
+    margin-bottom: 0.25rem;
+    color: var(--primary);
+}
+
+.portfolio-description {
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+.portfolio-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.portfolio-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.portfolio-links a:hover {
+    text-decoration: underline;
+}
+
+.portfolio-links svg {
+    flex-shrink: 0;
+}
+
 }
 
 /* Extra small phones */
