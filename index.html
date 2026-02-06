@@ -8,9 +8,12 @@
     <title>Vaughan Douglas - Professional Voice Over Talent</title>
     <meta name="title" content="Vaughan Douglas - Professional Voice Over Talent">
     <meta name="description" content="Professional voice over talent based in Buckeye, Arizona. Specializing in commercials, documentaries, e-learning, and corporate narration. Former KKNW-FM, KRWM-FM radio personality with broadcast-quality home studio.">
-    <meta name="keywords" content="voice over, voice talent, Arizona voice over, commercial voice over, documentary narration, e-learning voice over, corporate narration, radio voice, professional voice talent, Vaughan Douglas">
     <meta name="author" content="Vaughan Douglas">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://vaughandouglas-voice.netlify.app/">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#003366">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -34,8 +37,8 @@
       "name": "Vaughan Douglas",
       "jobTitle": "Professional Voice Talent",
       "description": "Professional voice talent with a background in radio and radio ad production, specializing in commercials, documentaries, e-learning, and corporate narration.",
-      "url": "https://vaughandouglas-voice.netlify.app/",
-      "image": "https://vaughandouglas-voice.netlify.app/Vaughan_HeadShot_BW.JPEG",
+      "url": "https://vaughandouglas-voice.github.io",
+      "image": "https://vaughandouglas-voice.github.io/Vaughan_HeadShot_BW.JPEG",
       "email": "vaughandouglas@gmail.com",
       "address": {
         "@type": "PostalAddress",
@@ -48,7 +51,7 @@
       ],
       "knowsAbout": [
         "Voice Over",
-        "Commercial Voice Acting",
+        "Commercial Voice Over",
         "Documentary Narration",
         "E-Learning Narration",
         "Corporate Voice Over",
@@ -119,6 +122,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+    <!-- ICONS -->
+    <!-- Fallback for Older Browsers -->
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- Standard Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+
+    <!-- Android/Google Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+
 </head>
 <body>
     <!-- Navigation -->
@@ -153,13 +178,13 @@
             <h2 class="section-title">Demo Reel</h2>
             <p class="section-subtitle">Listen to samples of my voicing demos across different styles</p>
 
-            <div class="audio-players" itemscope itemtype="https://schema.org/AudioObject">
-                <article class="audio-card">
+            <div class="audio-players">
+                <article class="audio-card" itemscope itemtype="https://schema.org/AudioObject">
                     <div class="audio-card-header">
-                        <h3>Commercial</h3>
-                        <span class="duration">0:46</span>
+                        <h3 itemprop="name">Commercial</h3>
+                        <span class="duration" itemprop="duration">PT46S</span>
                     </div>
-                    <p class="audio-description">Energetic and persuasive reads for advertising</p>
+                    <p class="audio-description" itemprop="description">Energetic and persuasive reads for advertising</p>
                     <div class="audio-player">
                         <button class="play-btn" data-audio="commercial" aria-label="Play commercial demo">
                             <svg class="play-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -179,18 +204,18 @@
                                 <span class="total-time">0:46</span>
                             </div>
                         </div>
-                        <audio data-id="commercial" preload="auto">
+                        <audio data-id="commercial" preload="auto" itemprop="contentUrl">
                             <source src="demos/demo2026_commercial.mp3" type="audio/mpeg">
                         </audio>
                     </div>
                 </article>
 
-                <article class="audio-card">
+                <article class="audio-card" itemscope itemtype="https://schema.org/AudioObject">
                     <div class="audio-card-header">
-                        <h3>Documentary</h3>
-                        <span class="duration">2:20</span>
+                        <h3 itemprop="name">Documentary</h3>
+                        <span class="duration" itemprop="duration">PT2M20S</span>
                     </div>
-                    <p class="audio-description">Clear, engaging storytelling for non-fiction and speculative documentaries</p>
+                    <p class="audio-description" itemprop="description">Clear, engaging storytelling for non-fiction and speculative documentaries</p>
                     <div class="audio-player">
                         <button class="play-btn" data-audio="documentary" aria-label="Play documentary demo">
                             <svg class="play-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -210,18 +235,18 @@
                                 <span class="total-time">2:20</span>
                             </div>
                         </div>
-                        <audio data-id="documentary" preload="auto">
+                        <audio data-id="documentary" preload="auto" itemprop="contentUrl">
                             <source src="demos/demo2026_documentary.mp3" type="audio/mpeg">
                         </audio>
                     </div>
                 </article>
 
-                <article class="audio-card">
+                <article class="audio-card" itemscope itemtype="https://schema.org/AudioObject">
                     <div class="audio-card-header">
-                        <h3>E-Learning</h3>
-                        <span class="duration">2:05</span>
+                        <h3 itemprop="name">E-Learning</h3>
+                        <span class="duration" itemprop="duration">PT2M5S</span>
                     </div>
-                    <p class="audio-description">Clear, articulate for e-learning courses and explainer videos</p>
+                    <p class="audio-description" itemprop="description">Clear, articulate narration for e-learning courses and explainer videos</p>
                     <div class="audio-player">
                         <button class="play-btn" data-audio="elearning" aria-label="Play e-learning demo">
                             <svg class="play-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -241,18 +266,18 @@
                                 <span class="total-time">2:05</span>
                             </div>
                         </div>
-                        <audio data-id="elearning" preload="auto">
+                        <audio data-id="elearning" preload="auto" itemprop="contentUrl">
                             <source src="demos/demo2026_eLearning.mp3" type="audio/mpeg">
                         </audio>
                     </div>
                 </article>
 
-                <article class="audio-card">
+                <article class="audio-card" itemscope itemtype="https://schema.org/AudioObject">
                     <div class="audio-card-header">
-                        <h3>Narration</h3>
-                        <span class="duration">2:05</span>
+                        <h3 itemprop="name">Narration</h3>
+                        <span class="duration" itemprop="duration">PT2M5S</span>
                     </div>
-                    <p class="audio-description">Professional, clear, articulate for video narration projects</p>
+                    <p class="audio-description" itemprop="description">Professional, clear, articulate narration for video projects</p>
                     <div class="audio-player">
                         <button class="play-btn" data-audio="narration" aria-label="Play narration demo">
                             <svg class="play-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -272,7 +297,7 @@
                                 <span class="total-time">2:05</span>
                             </div>
                         </div>
-                        <audio data-id="narration" preload="auto">
+                        <audio data-id="narration" preload="auto" itemprop="contentUrl">
                             <source src="demos/demo2026_narration.mp3" type="audio/mpeg">
                         </audio>
                     </div>
@@ -343,7 +368,7 @@
             <div class="about-grid">
                 <div class="about-content">
                     <h2 class="section-title">About Me</h2>
-                    <p class="about-text">As a professional voice talent with a background in radio and radio ad production, I bring clarity, warmth, and credibility to every script. My voice has been described as conversational, articulate, friendly, and calm—well-suited for narration, e-learning, corporate training, commercials, and documentaries.</p>
+                    <p class="about-text">As a professional voice talent with a background in radio and radio ad production, I bring clarity, warmth, and credibility to every script. My voice has been described as conversational, articulate, friendly, and calm; well-suited for narration, e-learning, corporate training, commercials, and documentaries.</p>
 
                     <p class="about-text">With years of experience on the air in the Seattle area and behind the production studio voicing and recording radio spots, I understand the technical and creative needs of clients. Now based in Buckeye, Arizona, I continue to deliver professional voice over work to clients nationwide. Whether it's delivering a polished commercial read, voicing a detailed training module, or narrating a documentary, I focus on capturing the right tone, pace, and emotion to match your message.</p>
 
@@ -368,22 +393,27 @@
 
                     <div class="detail-item">
                         <h4>SKILLS</h4>
-                        <p>- Studio-quality audio delivered promptly</p>
-                        <p>- Comfortable with complex scripts and industry terminology</p>
-                        <p>- Skilled in editing and post-production</p>
-                        <p>- Collaborative, reliable, and responsive to direction</p>
+                        <ul>
+                            <li>Studio-quality audio delivered promptly</li>
+                            <li>Comfortable with complex scripts and industry terminology</li>
+                            <li>Skilled in editing and post-production</li>
+                            <li>Collaborative, reliable, and responsive to direction</li>
+                        </ul>
                     </div>
 
                     <div class="detail-item">
                         <h4>EXPERIENCE</h4>
-                        <p>- Radio: KKNW-FM, Seattle, Washington (smooth jazz/new age format)</p>
-                        <p>- Radio: KRWM-FM, Seattle, Washington (adult contemporary format)</p>
-                        <p>- Radio: KGRX-FM, Mesa, Arizona (smooth jazz/new age format)</p>
-                        <p>- Voice work: Muzak, Seattle, Washington (on-hold messaging system)</p>
+                        <ul>
+                            <li>Radio: KKNW-FM, Seattle, Washington (smooth jazz/new age format)</li>
+                            <li>Radio: KRWM-FM, Seattle, Washington (adult contemporary format)</li>
+                            <li>Radio: KGRX-FM, Mesa, Arizona (smooth jazz/new age format)</li>
+                            <li>Voice work: Muzak, Seattle, Washington (on-hold messaging system)</li>
+                        </ul>
                     </div>
+
                 </div>
                 <div class="about-image">
-                    <img src="Vaughan_HeadShot_BW.JPEG" alt="Vaughan Douglas headshot" loading="lazy" style="width: 100%; border-radius: 12px;">
+                    <img src="Vaughan_HeadShot_BW.JPEG" alt="Vaughan Douglas professional voice talent headshot" loading="lazy" width="800" height="1000" style="border-radius: 12px;">
                 </div>
             </div>
         </div>
@@ -405,17 +435,17 @@
                 <div class="form-row">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required aria-required="true">
+                        <input type="text" id="name" name="name" required aria-required="true" autocomplete="name">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required aria-required="true">
+                        <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="project">Project Type</label>
-                    <select id="project" name="project">
+                    <select id="project" name="project" aria-label="Select project type">
                         <option value="">Select a service</option>
                         <option value="commercial">Commercial</option>
                         <option value="documentary">Documentary</option>
@@ -443,9 +473,9 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Dragon Voice. All rights reserved.</p>
+            <p>&copy; 2026 Vaughan Douglas Voice Talent. All rights reserved.</p>
             <div class="social-links">
-                <a href="https://www.voices.com/profile/vaughandouglas" target="_blank" rel="noopener noreferrer">Voices.com</a>
+                <a href="https://www.voices.com/profile/vaughandouglas" target="_blank" rel="noopener noreferrer">Voices.com Profile</a>
             </div>
         </div>
     </footer>
