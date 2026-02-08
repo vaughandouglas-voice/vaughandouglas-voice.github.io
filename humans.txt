@@ -1,0 +1,16 @@
+/* TEAM */
+Voice Talent: Vaughan Douglas
+Contact: vaughandouglas [at] gmail.com
+Location: Buckeye, Arizona, USA
+Voices.com: https://www.voices.com/profile/vaughandouglas
+
+/* SITE */
+Last update: 2026/02/07
+Standards: HTML5, CSS3, JavaScript ES6
+Components: Web3Forms, Google Fonts
+Software: VS Code
+
+/* THANKS */
+Fonts: Crimson Pro, DM Sans (Google Fonts)
+Icons: Feather Icons style (inline SVG)
+Hosting: GitHub Pages
